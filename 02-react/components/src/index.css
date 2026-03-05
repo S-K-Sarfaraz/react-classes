@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #212121;
+  color: white
+}
+.card{
+  background-color: pink;
+  color: #212121;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
