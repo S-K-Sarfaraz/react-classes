@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
-import NotFound from './pages/NotFound'
 import Products from './pages/Products'
 import Mobile from './pages/Mobile'
 import Laptop from './pages/laptop'
@@ -12,6 +11,7 @@ import PC from './pages/pc'
 import Course from './pages/Course'
 import Course1 from './pages/Course1'
 import Nav2 from './components/nav2'
+import NotFoundPage from './pages/NotFoundPage'
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
 
 
 
-        <Route path='*' element={<NotFound/>}/>
+        <Route path='*' element={<NotFoundPage/>}/>
       </Routes>
     </div>
   )
