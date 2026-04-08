@@ -8,7 +8,7 @@ import ProfileBackgound from "./components/ProfileBackgound";
 const App = () => {
     return (
         <div className="bg-gray-950 text-white p-5 h-screen flex justify-center items-center ">
-            <div className="m-20 h-[80%] w-[70%] bg-amber-200 rounded-xl">
+            <div className="m-20 h-[80%] w-[70%] bg-white rounded-xl">
                 <BackgoundImage />
                 <div className="m-4">
                     <div className="bg-white rounded-full p-2 absolute top-38">
