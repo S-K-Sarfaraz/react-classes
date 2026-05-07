@@ -18,6 +18,9 @@ const Header = () => {
                 <Link href='/product'>
                     <li className='cursor-pointer hover:text-blue-500'>Product</li>
                 </Link>
+                <Link href='/blogs'>
+                    <li className='cursor-pointer hover:text-blue-500'>Blogs</li>
+                </Link>
             </ul>
         </div>
     </div>
