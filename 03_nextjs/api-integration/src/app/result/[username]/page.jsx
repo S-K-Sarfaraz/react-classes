@@ -1,12 +1,11 @@
 import Result from '@/components/Result'
 import React from 'react'
 
-const ResultPageName = async (props) => {
-    const params = await props.params
-    const userName = params.username
+const ResultPageName = async ({ params }) => {
+    const { username } = await params
     // console.log(userName)
 
-    const ref = await fetch(`https://api.genderize.io/?name=${userName}`)
+    const ref = await fetch(`https://api.genderize.io/?name=${username}`)
     const userData = await ref.json()
     console.log(userData)
     const percen = userData.probability * 100
@@ -14,13 +13,13 @@ const ResultPageName = async (props) => {
   return (
     <div className='flex flex-col'>
         <p>
-            This is the userName: {userName}
+            This is the userName: {username}
         </p>
         <p>
             Gender: {userData.gender}
         </p>
         <p>
-            Percentage: {percen}
+            Percentage: {percen}%
         </p>
     </div>
   )
